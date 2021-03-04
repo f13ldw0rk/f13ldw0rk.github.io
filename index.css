@@ -5,13 +5,14 @@ body {
 	color: gray;
 	font-family: 'Source Code Pro', monospace;
 	font-size: 14px;
-	margin: 0;
-	padding: 0;
+	margin: 15px;
+	padding: 15px;
 	overflow-x: hidden;
 }
 
 p,h1,h2,h3,h4,h5,h6,a {
 	color: gray;
+	text-align: justify;
 	overflow-wrap: break-word;
 	text-decoration: none;
   	word-wrap: break-word;
