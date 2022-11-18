@@ -22,7 +22,7 @@ a {
 
 img {
 	-webkit-filter: grayscale(100%); /*Safari 6.0 - 9.0*/
-    filter: grayscale(100%);
+    	filter: grayscale(100%);
 }
 
 table {
@@ -31,6 +31,6 @@ table {
 
 tr, td {
 	vertical-align: top;
-	border: 1px solid;
+	border: 1px solid black;
 	padding: 10px;
 }
