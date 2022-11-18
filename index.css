@@ -4,29 +4,35 @@ body {
 	background: white;
 	color: gray;
 	font-family: 'Source Code Pro', monospace;
-	font-size: 14px;
+	font-size: 12px;
 	margin: 15px;
 	padding: 15px;
 	overflow-x: hidden;
 }
 
-div.container {
-	max-width: 500px;
-	width: device-width;
-	display: block;
-	float: left;
-	border: 1px solid gray;
-	padding: 15px;
-}
-
-p,h1,h2,h3,h4,h5,h6,a {
+p,h1,h2,h3,h4,h5,h6 {
 	color: gray;
 	text-align: justify;
 	overflow-wrap: break-word;
-	text-decoration: none;
   	word-wrap: break-word;
 }
 
+a {
+	color: firebrick;
+	text-decoration: none;
+}
+
 img {
-	
+	-webkit-filter: grayscale(100%); /*Safari 6.0 - 9.0*/
+    filter: grayscale(100%);
+}
+
+table {
+	border-collapse: collapse;
+}
+
+tr, td {
+	vertical-align: top;
+	border: 0.5px solid;
+	padding: 10px;
 }
