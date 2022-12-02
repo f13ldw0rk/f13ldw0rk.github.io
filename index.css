@@ -24,14 +24,17 @@ img {
 	-webkit-filter: grayscale(100%); /*Safari 6.0 - 9.0*/
     filter: grayscale(100%);
 	filter: invert();
+	width: 100%;
 }
 
 table {
+	width:100%;
 	border-collapse: collapse;
+	table-layout:fixed;
 }
 
 td {
 	vertical-align: top;
-	border: 0.5px solid white;
+	border: 1.0px solid white;
 	padding: 10px;
 }
