@@ -27,9 +27,8 @@ ul {
 }
 
 img {
-	-webkit-filter: grayscale(100%); /*Safari 6.0 - 9.0*/
-    filter: grayscale(100%);
-	filter: invert();
+	-webkit-filter: grayscale(1) invert(); /*Safari 6.0 - 9.0*/
+    filter: grayscale(1) invert();
 	width: 100%;
 }
 
