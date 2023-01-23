@@ -1,0 +1,8 @@
+td {
+    height: max-content;
+    font-size: large;
+}
+
+td.clickable:hover {
+    background-color: dimgray;
+}
