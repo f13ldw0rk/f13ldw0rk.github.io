@@ -9,8 +9,8 @@ let positions = null;
 
 function setup() {
   capture = createCapture(VIDEO);
-  let w = 400;
-  createCanvas(16/9 * w, w);
+  let w = 500;
+  createCanvas(7/5 * w, w);
   capture.size(width,height);
   capture.hide();
 
@@ -36,13 +36,11 @@ function draw() {
     // Eye points from clmtrackr:
     // https://www.auduno.com/clmtrackr/docs/reference.html
     
-    
     var righteye = getPoint(27);
     var lefteye = getPoint(32);
     var dist = p5.Vector.dist(righteye,lefteye);
     var height = 0.5*(p5.Vector.dist(getPoint(24),getPoint(26)) + p5.Vector.dist(getPoint(29),getPoint(31)));
     var center = righteye.add(lefteye).mult(0.5);
-    
     
     fill(0);
     push();
