@@ -10,10 +10,10 @@ let w = 0, h = 0;
 
 function setup() {
   w = 500;
-  h = 400;
+  h = 500;
   capture = createCapture(VIDEO);
   createCanvas(w, h);
-  capture.size(w, h);
+  //capture.size(w, h);
   capture.hide();
 
   frameRate(10);
@@ -27,14 +27,16 @@ function setup() {
 }
 
 function draw() {
-  // background(255);
+  background(255);
   // Flip the canvas so that we get a mirror image
   translate(w, 0);
   scale(-1.0, 1.0);
   positions = tracker.getCurrentPosition();
 
   if (positions.length > 0) {
-    image(capture, 0, 0, capture.width, capture.height);
+    image(capture, 0, 0, width, capture.height/capture.width * width);
+    // image(capture, 0, 0, capture.width, capture.height);
+
 
     // Eye points from clmtrackr:
     // https://www.auduno.com/clmtrackr/docs/reference.html
@@ -65,7 +67,7 @@ function getPoint(index) {
 
 function mouseClicked() {
   const timestamp = timestampString();
-  saveCanvas("eyeblind-" + timestamp, "png");
+  saveCanvas("capture-" + timestamp, "png");
 }
 
 function timestampString() {
