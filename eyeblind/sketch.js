@@ -6,17 +6,14 @@
 let capture = null;
 let tracker = null;
 let positions = null;
-let w = 0, h = 0;
 
 function setup() {
-  w = 500;
-  h = 500;
   capture = createCapture(VIDEO);
-  createCanvas(w, h);
-  //capture.size(w, h);
+  let w = 400;
+  createCanvas(16/9 * w, w);
+  capture.size(width,height);
   capture.hide();
 
-  frameRate(10);
   colorMode(HSB);
   rectMode(CENTER);
   background(0);
@@ -29,14 +26,12 @@ function setup() {
 function draw() {
   background(255);
   // Flip the canvas so that we get a mirror image
-  translate(w, 0);
+  translate(width, 0);
   scale(-1.0, 1.0);
   positions = tracker.getCurrentPosition();
 
   if (positions.length > 0) {
-    image(capture, 0, 0, width, capture.height/capture.width * width);
-    // image(capture, 0, 0, capture.width, capture.height);
-
+    image(capture, 0, 0, width, height);
 
     // Eye points from clmtrackr:
     // https://www.auduno.com/clmtrackr/docs/reference.html
