@@ -1,7 +1,7 @@
-FLDWRK is :: 
+FLDWRK :: F13ldw0rk :: fld_wrk
 
-found spaces - open movement - deconstructed - reworked - shared
+To preserve DIY culture, resist power, protect place, broaden access, and increase freedom
 
-rave - scene - placemaker - platform - tool
-
-WE are here to preserve DIY culture, resist power, protect place, broaden access, and increase freedom.
+e-mail {fldwrk@pm.me}
+instagram {@fld_wrk}
+mastodon {https://mastodon.social/@fieldwork}
